@@ -1,0 +1,62 @@
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url(/basdasj_2.jpg);
+    background-size: cover;
+    color: white;
+    
+}
+div{
+
+    text-align: center;
+    display: grid;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+}
+
+h1{
+    color: goldenrod;
+    display: flex;
+    align-items: center;
+    font-size: 70px;
+    justify-content:center;
+}
+#message-el{
+    font-style: italic;
+}
+
+p{
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    justify-content:center;
+}
+
+start-btn{
+    background-color: goldenrod;
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    margin-left: 42%;
+    justify-content:center;
+    text-align: center;
+}
+button{
+    background-color: goldenrod;
+    color: rgb(0, 58, 59);
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    cursor: pointer;
+    padding: 2px 30px;
+    border-radius: 2pc;
+    font-weight: bolder;
+    margin-top: 5px;
+    margin-top: 5px;
+}
+
+#player-el{
+    margin: 150px 0;
+}
+
