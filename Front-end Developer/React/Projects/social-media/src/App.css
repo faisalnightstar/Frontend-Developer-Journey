@@ -36,3 +36,12 @@
     margin-left: 10%;
   }
 }
+
+/* Welcome message file style */
+.welcome-message {
+  margin: 10rem 0 2rem 0;
+}
+
+.loading-spinner {
+  margin: 10rem 0 2rem 0;
+}

@@ -3,6 +3,7 @@ import { createContext, useReducer } from "react";
 export const PostList = createContext({
   postList: [],
   addPost: () => {},
+  addInitialPosts: () => {},
   deletePost: () => {},
 });
 
@@ -14,16 +15,16 @@ const postListReducer = (currPostList, action) => {
     );
   } else if (action.type === "ADD_POST") {
     newPostList = [action.payload, ...currPostList];
+  } else if (action.type === "ADD_INITIAL_POSTS") {
+    newPostList = action.payload.posts;
   }
   return newPostList;
 };
 
 const PostListProvider = ({ children }) => {
-  const [postList, dispatchPostList] = useReducer(
-    postListReducer,
-    DEFAULT_POST_LIST
-  );
+  const [postList, dispatchPostList] = useReducer(postListReducer, []);
 
+  // For fetching single post at a time
   const addPost = (userId, postTitle, postBody, reactions, tags) => {
     dispatchPostList({
       type: "ADD_POST",
@@ -38,6 +39,16 @@ const PostListProvider = ({ children }) => {
     });
   };
 
+  // For deleting multiple post at a time.
+  const addInitialPosts = (posts) => {
+    dispatchPostList({
+      type: "ADD_INITIAL_POSTS",
+      payload: {
+        posts,
+      },
+    });
+  };
+
   const deletePost = (postId) => {
     dispatchPostList({
       type: "DELETE_POST",
@@ -48,45 +59,12 @@ const PostListProvider = ({ children }) => {
   };
 
   return (
-    <PostList.Provider value={{ postList, addPost, deletePost }}>
+    <PostList.Provider
+      value={{ postList, addPost, deletePost, addInitialPosts }}
+    >
       {children}
     </PostList.Provider>
   );
 };
-
-const DEFAULT_POST_LIST = [
-  {
-    id: 1,
-    title: "Going to Mumbai",
-    body: "Hi there! I am going to Mumbai for a vacation. I am going with my friends and will be back soon.",
-    reactions: 20,
-    userId: "faisalnightstar",
-    tags: ["vacation", "mumbai", "friends", "travel"],
-  },
-  {
-    id: 2,
-    title: "Going to",
-    body: "Hi there! I am going for sex to Mumbai for a vacation. I am going with my friends and will be back soon.",
-    reactions: 50,
-    userId: "faisalnight",
-    tags: ["vacation", "mumbai", "friends", "travel"],
-  },
-  {
-    id: 3,
-    title: "Going",
-    body: "Hi there! I am going to Mumbai for a vacation. I am going with my friends and will be back soon.",
-    reactions: 450,
-    userId: "faisal",
-    tags: ["vacation", "mumbai", "friends", "travel"],
-  },
-  {
-    id: 4,
-    title: "Going to Mumbai",
-    body: "Hi there! I am going to Mumbai for a vacation. I am going with my friends and will be back soon.",
-    reactions: 520,
-    userId: "fixz",
-    tags: ["vacation", "mumbai", "friends", "travel"],
-  },
-];
 
 export default PostListProvider;

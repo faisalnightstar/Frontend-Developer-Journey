@@ -30,7 +30,7 @@ const Post = ({ post }) => {
         <hr />
         <span aria-hidden="true" className="badge text-bg-primary reactions">
           <AiFillLike />
-          {post.reactions}
+          {post.reactions.likes}
         </span>
       </div>
     </div>
