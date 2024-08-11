@@ -1,0 +1,19 @@
+:root {
+    --red:hsl(345, 100%, 50%);
+    --grey:hsl(76, 100%, 50%);
+}
+p {
+    color: var(--red);   
+}
+
+.gray{
+    color: var(--grey);
+}
+
+.gray {
+    color: gray;
+}
+
+.gray {
+    color: blue;
+}

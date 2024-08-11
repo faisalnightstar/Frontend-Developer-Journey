@@ -1,0 +1,15 @@
+body{
+    align-items: center;
+}
+.calculator{
+    border: 1px  solid gray;
+    width: 250px;
+    height: 450px;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+

@@ -1,0 +1,32 @@
+
+.list-div{
+    margin: 0 0%;
+    padding: 2%;
+
+    color: #d1e8e2;
+    display: flex;
+
+}
+
+ 
+
+.right-menu {
+  display: flex;
+  justify-content: center;
+  margin-left: 10vw;
+}
+
+.navbar-list {
+  list-style: none;
+  margin: 0 2%;
+}
+
+.navbar-anchor-tag {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.navbar-anchor-tag:hover {
+  cursor: pointer;
+  color: var(--other-color);
+}

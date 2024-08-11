@@ -1,0 +1,17 @@
+/* This is a CSS module.  */
+
+.kg-items {
+  background-color: #74992e;
+  width: 100%;
+  padding: 50px;
+  background: #74992e;
+}
+
+.button {
+  float: right;
+  font-size: 1rem;
+}
+
+.delete_button {
+  float: right;
+}

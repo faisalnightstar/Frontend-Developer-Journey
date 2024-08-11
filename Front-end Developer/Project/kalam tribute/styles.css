@@ -1,0 +1,68 @@
+:root {
+  --color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: lightgray;
+}
+header{
+    margin: 20px 30px;
+    padding:50px 0px;
+}
+
+header > div {
+text-align: center;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  width: 100%;
+
+}
+
+header > div > #title {
+  font-weight: bolder;
+}
+
+header > div > .title-para {
+  font-size: smaller;
+  font-style: italic;
+}
+#img-div{
+    background-color: var(--color);
+    margin: 10px 30px;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+}
+#image {
+    align-items: center;
+    align-content: center;
+      max-width: 100%;
+  margin: auto;
+  padding: 20px;
+
+}
+figcaption {
+margin:0 200px;
+text-align: center;
+}
+#tribute-info{
+    max-width: 550px;
+    margin: 0 auto 50px auto;
+    text-align: left;
+    line-height: 1.6;
+}
+
+#tribute-info > p{
+    padding:0 10px;
+}

@@ -1,0 +1,23 @@
+.logo-div {
+    display: flex;
+  
+    align-items: center;
+    overflow: hidden;
+  }
+
+  
+.logo-image {
+    height: 60px;
+    width: 60px;
+    margin-right: 20px;
+  }
+  
+  .logo-text {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    color: var(--text-color);
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
+  

@@ -1,0 +1,109 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #777777;
+    
+}
+
+nav, main, footer {
+    padding: 1rem;
+}
+
+nav {
+    position: fixed;
+    width: 16rem;
+    height: 100%;
+    background: #333;
+    color: #fff;
+    overflow-y: auto;
+}
+
+nav header{
+    font-weight: bolder;
+    font-size: larger;
+}
+
+nav li{
+    list-style: none;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem;
+    border-bottom: 1px solid #444;
+    
+}
+
+nav a:hover {
+    background: #777777;
+}
+
+main {
+    margin-left: 16rem;
+    padding: 1rem;
+    flex: 1;
+}
+
+main header {
+    margin: 0.5rem 0;
+    border-top: #333 1px solid;
+    font-size: larger;
+    font-weight: bold;
+}
+
+p {
+    margin: 0.5rem 1rem;
+    color: #ddd;
+}
+
+pre {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    overflow-x: auto;
+}
+
+main li {
+    margin: 0 2rem;
+    color: #ddd;
+}
+
+code{
+    padding: 1rem;
+    text-align: center;
+}
+/* Responsive styles */
+@media (max-width: 768px) {
+    nav {
+        position: static;
+        width: 100%;
+        height: auto;
+    }
+
+    main {
+        margin-left: 0;
+    }
+}
+
+/* Code block styling */
+code {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    background: #eaeaea;
+    padding: 0.2rem 0.4rem;
+    border-radius: 0.3rem;
+    border:0.1rem #333 solid;
+}

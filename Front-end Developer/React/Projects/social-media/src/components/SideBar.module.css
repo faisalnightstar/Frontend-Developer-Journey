@@ -1,0 +1,14 @@
+.sidebar {
+  background-color: aliceblue;
+  display: none !important;
+}
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 768px) {
+  .sidebar {
+    /* min-height: calc(100vh - 64px); */
+    min-height: 50em;
+    width: 12em;
+    display: flex !important;
+  }
+}

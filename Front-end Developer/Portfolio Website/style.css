@@ -1,0 +1,39 @@
+:root{
+    --body-bg: #AC8968;
+    --button: #3E362E;
+    --text: #865D36;
+    --color1: #93785B;
+    --color2: #A69080;
+}
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  color: var(--text);
+}
+
+body {
+  
+
+  font-family: "Poppins", sans-serif;
+}
+
+.container > nav > div{
+    display: flex;
+}
+
+nav > .left{
+    border: 2px solid red;
+    
+}
+
+.right > ul {
+    border: 2px solid red;
+    list-style: none;
+    display: flex;
+    background-color: var(--button);
+}
+

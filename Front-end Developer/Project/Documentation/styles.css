@@ -1,0 +1,309 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+  }
+  
+  body {
+    background-color: rgb(0, 0, 33);
+    color: white;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    background-color: rgb(10, 10, 52);
+    padding: 10px 0px;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    list-style: none;
+    margin: 0 20px;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  nav ul li a:hover {
+    color: rgb(169, 105, 228);
+    font-size: 1.04rem;
+  }
+  
+  .left > a{
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* <main> ka left section hai */
+  .firstSection {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0;
+    align-items: center;
+  }
+  
+  .firstSection > div {
+    width: 30%;
+  }
+  
+  .leftSection {
+    font-size: 2rem;
+  }
+  
+  .leftSection .buttons{
+      /* padding: 15px 60px; */
+      color: white;
+      display: flex;
+      justify-content: start;
+  
+      
+  }
+  .leftSection .btn {
+      background-color: rgb(0, 30, 60);
+      color: white;
+      padding: 15px 40px;
+      border-radius: 40px;
+      justify-content: space-between;
+      cursor: pointer;
+      margin: 0px 5px;
+      display: inline;
+      
+  }
+  
+  /* .leftSection .btnn {
+    background-color: rgb(0, 30, 60);
+    color: white;
+    padding: 15px 45px;
+    margin: 5px;
+    border-radius: 40px;
+    justify-content: space-between;
+    cursor: pointer;
+  } */
+  
+  
+  .leftSection .btn >a{
+      color: white;
+      text-decoration: none;
+      
+  }
+  
+  
+  #element {
+    color: rgb(169, 105, 228);
+  }
+  
+  .purple {
+    color: rgb(169, 105, 228);
+  }
+  
+  .rightSection {
+  }
+  
+  .rightSection img {
+    width: 90%;
+    margin: 30px;
+  }
+  
+  
+  /* Yha se <main> ka second sections ka styling start ho rha h */
+  main hr{
+      background: rgb(169, 105, 228);
+      border: 0px;
+      height: 1px;
+      margin: 30px 90px;
+  }
+  .secondSection{
+      max-width: 80vw;
+      margin: auto;
+      height: 80vh;
+  
+  
+  
+  }
+  .text-grey {
+      color: grey;
+  }
+  
+  main h2 {
+      font-size: 2rem;
+  }
+  /* Past Exprience ka box hai */
+  .secondSection .box {
+    background: white;
+    width: 62vw;
+    height: 2px;
+    margin: 60px 52px;
+    display: flex;
+  }
+  .secondSection .project-title{
+      height: 70px;
+      width: 1px;
+      background-color: white;
+      margin: 0 100px;
+  }
+  
+  .image-top{
+      width: 23px;
+      position: relative;
+      top: -32px;
+      left: -10px;
+  }
+  
+  .verticle-title{
+      position: relative;
+      
+      top: 40px;
+      right: 50px;
+      width: 150px;
+  }
+  .verticle-desc{
+      position: relative;
+      top: 45px;
+      right: 50px;
+      font-size: 2vh;
+      width: 150px;
+      color: grey;
+      font-size: xx-small;
+      
+  }
+  /* this tag footer */
+  footer{
+      background-color: rgb(10, 10, 52);
+      
+  }
+  /* this is class=footer */
+  .footer{
+      display:flex;
+      padding: 23px 90px;
+      justify-content: center;
+  }
+  
+  .footer > div{
+      width: 223px;
+      
+  }
+  
+  .footer ul{
+      list-style: none;
+  
+  }
+  
+  /* footer footer-rights */
+  
+  .copyright {
+      text-align: center;
+      color: gray;
+      padding: 12px 0;
+  }
+  
+  
+  
+  @media only screen and (max-width: 768px) {
+    /* Mobile styles */
+  
+    nav {
+      height: auto; /* Adjust height for smaller screens */
+      flex-direction: column; /* Stack items vertically */
+      padding: 10px 0; /* Add padding */
+    }
+  
+    nav ul {
+      margin-top: 10px; /* Space between navigation items */
+    }
+  
+    .firstSection {
+      flex-direction: column; /* Stack items vertically */
+      text-align: center; /* Center align text */
+      margin: 90px 30px; /* Adjust margin */
+    }
+  
+    .firstSection > div {
+      width: 80%; /* Adjust width */
+      margin-bottom: 20px; /* Space between sections */
+    }
+  
+    .leftSection .buttons{
+      /* margin: 0px;  */
+      color: white;
+      display: ruby-text;
+  
+      
+  }
+  
+    .leftSection .btn {
+      padding: 15px 30px; /* Adjust button padding */
+      font-size: 0.5rem; /* Decrease font size */
+      margin: 5px;
+      list-style: none;
+    }
+  
+    /* .leftSection .btnn {
+      background-color: rgb(0, 30, 60);
+      color: white;
+      padding: 15px 40px;
+      margin: 5px;
+      border-radius: 40px;
+      justify-content: space-between;
+      cursor: pointer;
+  } */
+    main hr{
+      margin-top: -77px;
+    }
+    .text-grey{
+      font-size: smaller;
+    }
+  
+  
+    .rightSection{
+      display: none;
+    }
+  
+    .secondSection .box {
+      width: 90%; /* Adjust width */
+      margin: 40px auto; /* Center align and adjust margin */
+    }
+  
+    .secondSection .project-title {
+      /* width: calc(100% - 2px); Full width on smaller screens */
+      margin: 2px; /* Adjust margin for spacing */
+      width: 2px;
+      height: 35px;
+  
+    }
+    .verticle-title{
+      margin: 0px 30px;
+      font-size:smaller;
+      align-items: center;
+    }
+    .verticle-desc{
+      font-size: smaller;
+      margin: 0 20px;
+    }
+  
+    .image-top{
+      display: none;
+    }
+    
+  
+    .footer > div {
+      width: 100%;
+      /* margin-bottom: 10px; */
+      display: flex;
+      padding: 5px 50px;
+      margin: auto;
+    }
+  }

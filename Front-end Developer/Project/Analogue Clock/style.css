@@ -1,9 +1,13 @@
+body {
+    min-width: 400px;
+}
+
 #clockContainer {
     position: relative;
     margin: auto;
     height: 40vw;
     width: 40vw;
-    background: url(files/clock.png) no-repeat;
+    background: url(/clock.png) no-repeat;
     background-size: 100%;
 }
 
