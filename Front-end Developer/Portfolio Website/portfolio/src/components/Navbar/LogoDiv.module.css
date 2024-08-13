@@ -1,23 +1,29 @@
 .logo-div {
-    display: flex;
-  
-    align-items: center;
-    overflow: hidden;
-  }
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
 
-  
+  align-items: center;
+  overflow: hidden;
+  margin: 0.5%;
+  margin-left: 2%;
+}
+
 .logo-image {
-    height: 60px;
-    width: 60px;
-    margin-right: 20px;
-  }
-  
+  height: 40px;
+  width: 40px;
+  padding: 0.5rem;
+}
+
+.logo-text {
+  width: 11rem;
+  height: 3.5rem;
+}
+
+@media screen and (max-width: 600px) {
   .logo-text {
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    color: var(--text-color);
-    font-size: 1.5rem;
-    text-decoration: none;
+    width: 6rem;
+    height: 1.8rem;
+    color: var(--secondary);
   }
-  
+}
