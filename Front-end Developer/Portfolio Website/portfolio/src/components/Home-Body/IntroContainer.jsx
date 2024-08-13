@@ -16,7 +16,11 @@ const IntroContainer = () => {
         </span>
       </div>
       <div className={styles["rightSection"]}>
-        <img className={styles["image"]} src="../Media/bg.png" alt="Bg image" />
+        <img
+          className={styles["image"]}
+          src="../src/assets/bg.png"
+          alt="Bg image"
+        />
       </div>
     </div>
   );
