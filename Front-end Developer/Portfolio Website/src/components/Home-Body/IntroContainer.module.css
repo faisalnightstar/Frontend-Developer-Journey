@@ -1,0 +1,98 @@
+.intro-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+  align-items: center;
+}
+.image {
+  width: 90%;
+  margin: 30px;
+}
+
+/* .leftSection {
+  color: var(--text-color);
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 5rem;
+  margin: auto;
+  margin-left: 1rem;
+  padding: 1em;
+  text-shadow: var(--other-color) 2px -2px 2px;
+} */
+
+/*for creating shadow 2px -2px 0 var(--other-color),
+    3px -3px 0 var(--other-color), 4px -4px 0 var(--other-color),
+    5px -5px 0 var(--other-color), 6px -6px 0 var(--other-color),
+    7px -7px 0 var(--other-color), 8px -8px 0 rgba(0, 0, 0, 0.5); /* Slight shadow for depth */
+
+.leftSection {
+  color: var(--text-color);
+  font-size: 3rem;
+  text-align: center;
+  margin: auto;
+  margin-left: 3rem;
+  padding: 1em;
+
+  /* 3D Text Effect using multiple shadows */
+  text-shadow: 1px 0 var(--other-color), 1.2px -0.5px 0 var(--other-color),
+    1.4px -1px 0 var(--other-color), 1.6px -1.5px 0 var(--other-color),
+    1.8px -2px 0 var(--other-color), 2px -2.5px 0 var(--other-color),
+    2.2px -3px 0 var(--other-color), 2.4px -3.5px 0 var(--other-color),
+    2.6px -4px 0 var(--other-color), 2.8px -4.5px 0 var(--other-color),
+    3px -5px 0 var(--other-color), 5px -6px 0 rgba(0, 0, 0, 0.5);
+
+  /* Optional: You can add transform for a slight tilt */
+  /* transform: perspective(500px) rotateX(5deg) rotateY(5deg); */
+}
+
+.text-3D {
+  color: var(--other-color);
+  /* 3D Text Effect using multiple shadows */
+  text-shadow: 1px 0 var(--text-3D), 1.2px -0.5px 0 var(--text-3D),
+    1.4px -1px 0 var(--text-3D), 1.6px -1.5px 0 var(--text-3D),
+    1.8px -2px 0 var(--text-3D), 2px -2.5px 0 var(--text-3D),
+    2.2px -3px 0 var(--text-3D), 2.4px -3.5px 0 var(--text-3D),
+    2.6px -4px 0 var(--text-3D), 2.8px -4.5px 0 var(--text-3D),
+    3px -5px 0 var(--text-3D), 5px -6px 0 rgba(0, 0, 0, 0.5);
+
+  /* Optional: You can add transform for a slight tilt */
+  /* transform: perspective(500px) rotateX(5deg) rotateY(5deg); */
+}
+
+.rightSection {
+  width: 40%;
+  margin: auto;
+  margin-right: 1rem;
+  padding: 1em;
+}
+
+@media screen and (max-width: 1024px) {
+  /* .leftSection {
+    width: 30%;
+    font-size: 1.5rem;
+    text-shadow: none;
+  } */
+
+  .text-3D {
+    /* 3D Text Effect using multiple shadows */
+    text-shadow: 1px 0 var(--text-3D), 1.2px -0.5px 0 var(--text-3D),
+      1.4px -1px 0 var(--text-3D), 1.6px -1.5px 0 var(--text-3D),
+      1.8px -2px 0 var(--text-3D), 2px -2.5px 0 var(--text-3D),
+      3px -3px 0 rgba(0, 0, 0, 0.5);
+  }
+}
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  .leftSection {
+    text-shadow: 0.75px 0.75px 0 var(--other-color),
+      1.5px 1.5px 1.5px rgba(0, 0, 0, 0.3); /* Softer shadow for tablets */
+  }
+}
+
+/* Small devices (phones, 480px and down) */
+@media (max-width: 480px) {
+  .leftSection {
+    text-shadow: 0.5px 0.5px 0 var(--other-color),
+      1px 1px 1px rgba(0, 0, 0, 0.3); /* Softer shadow for phones */
+  }
+}

@@ -1,7 +1,7 @@
 :root {
   --primary: #002f30;
   --secondary: #002425;
-  --button-color: #f0edcc;
+  --button-color: rgb(0, 30, 60);
   --other-color: #d1e8e2;
   --text-color: #ffcb9a;
   --other-color-dark: #1fa564;
@@ -9,6 +9,4 @@
   --footer-color: #2c3531;
   --gray-color: gray;
   --text-3D: #bf376c;
-  --button-hover: #002f30;
-  --text: rgb(92, 149, 207);
 }

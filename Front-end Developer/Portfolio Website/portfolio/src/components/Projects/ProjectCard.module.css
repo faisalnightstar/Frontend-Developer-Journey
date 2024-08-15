@@ -1,0 +1,54 @@
+.projectCard {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.projectCard:hover {
+  transform: translateY(-10px);
+}
+
+.projectTitle {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.projectDescription {
+  margin-bottom: 15px;
+  color: #666;
+}
+
+.technologies {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.techIcon {
+  font-size: 24px;
+  margin: 0 10px;
+  color: #007bff;
+}
+
+.techIcon:hover {
+  color: #0056b3;
+}
+
+.visitButton {
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.visitButton:hover {
+  background-color: #0056b3;
+}

@@ -1,0 +1,52 @@
+.projectSlide {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  position: relative;
+}
+
+.projectName {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.projectDescription {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.technologies {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.techIcon {
+  font-size: 24px;
+  margin: 0 10px;
+  color: #007bff;
+}
+
+.techIcon:hover {
+  color: #0056b3;
+}
+
+.seeMoreButton {
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.seeMoreButton:hover {
+  background-color: #0056b3;
+}
